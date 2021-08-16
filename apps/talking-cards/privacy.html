@@ -370,7 +370,37 @@ We will notify you via email &bull; Within 7 business days We also agree to the 
   <script src="assets/js/main.js"></script>
 
   <script language="javascript">
-    alert(window.location.search);
+    var param = window.location.search;
+    var keys = [];
+    var values = [];
+    var obj = {};
+    if(param.length > 1){
+      if(param.charAt(0) == "?"){
+        param = param.substring(1,param.length);
+        alert(param);
+        if(param.indexOf("=") > -1){
+          if(param.indexOf("&") > -1){
+            var tmp = param.split("&");
+            for(var i = 0; i < tmp.length; i++){
+              var tmp2 = tmp[i].split("=");
+              keys.push(tmp2[0]);
+              values.push(tmp2[1]);
+            }
+          }
+          else{
+            var tmp = param.split("=");
+            keys.push(tmp[0]);
+            values.push(tmp[1]);
+          }
+        }
+
+        for(var loop = 0; loop < keys.length; loop++){
+          obj[keys[loop]] = values[loop];
+        }
+
+        alert(obj.toString());
+      }
+    }
   </script>
 </body>
 
