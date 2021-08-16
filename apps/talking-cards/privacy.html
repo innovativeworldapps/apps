@@ -371,7 +371,20 @@ We will notify you via email &bull; Within 7 business days We also agree to the 
 
   <script language="javascript">
     var param = window.location.search;
+
+    if(param.indexOf("?mode=100")){
+      window.getElementById("breadcrumbs").style.display = "none";
+      window.getElementById("backtohome").style.display = "none"
+
+    }
     /*
+
+        if(param.length > 1){
+          if(param.charAt(0) == "?"){
+          param = param.substring(1,param.length);
+        }
+      }
+
     var keys = [];
     var values = [];
     var obj = {};
