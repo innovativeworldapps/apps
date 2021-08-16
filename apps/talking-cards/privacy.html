@@ -371,6 +371,8 @@ We will notify you via email &bull; Within 7 business days We also agree to the 
 
   <script language="javascript">
     var param = window.location.search;
+    alert(param);
+    alert(param.indexOf("?mode=100"));
 
     if(param.indexOf("?mode=100") > -1){
       window.getElementById("breadcrumbs").style.display = "none";
