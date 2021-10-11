@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #1acc8d;
+  color: #be1212;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
+  border: 6px solid #be1212;
   border-top-color: #d2f9eb;
   border-radius: 50%;
   width: 60px;
@@ -1526,9 +1526,9 @@ section {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  background: #67310e;/*#010246*/
   color: #fff;
-  border-top: 4px solid #1acc8d;
+  border-top: 4px solid #be1212;/*#1acc8d*/
   text-align: center;
   padding: 30px 20px;
 }
@@ -1563,7 +1563,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1acc8d;
+  background: #be1212;
   color: #fff;
   text-decoration: none;
 }
@@ -1637,7 +1637,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1acc8d;
+  background: #be1212;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
