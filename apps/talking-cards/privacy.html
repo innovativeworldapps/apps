@@ -28,6 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+	.hideit{display:none!important;}
+  </style>
   <!-- =======================================================
   * Template Name: Bootslander - v4.3.0
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
@@ -375,10 +378,10 @@ We will notify you via email &bull; Within 7 business days We also agree to the 
     //alert(param.indexOf("?mode=100"));
 
     if(param.indexOf("?mode=100") > -1){
-      document.getElementById("breadcrumbs").style.display = "none";
-      document.getElementById("backtohome").style.display = "none";
-      document.getElementById("navbar").style.display = "none";
-      document.getElementById("header").style.display = "none";
+      document.getElementById("breadcrumbs").className = "hideit";
+      //document.getElementById("backtohome").className = "hideit";
+      //document.getElementById("navbar").className = "hideit";
+      document.getElementById("header").className = "hideit";
     }
     /*
 
